@@ -6,7 +6,7 @@
 
 Body {
     display: flex;
-    height: 100vh;
+    height: 1200px;
     width: 100vw;
     background-color: #0A0A0A;
     flex-direction: column;
@@ -59,9 +59,9 @@ main {
 
 .Apresentação {
     display: flex;
-    height: 35%;
+    height: 20%;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     gap: 40px;
     border-bottom: 4px solid #C6FF3D;
 }
@@ -81,3 +81,36 @@ main {
     color: #C6FF3D;
 }
 
+.links {
+    display: flex;
+    height: 80%;
+    align-items: start;
+    justify-content: center;
+    border-bottom: 4px solid #C6FF3D;
+    padding: 20px;
+    flex-direction: column;
+    flex-flow: wrap;
+    gap: 50px;
+}
+
+.links a{
+    width: 113px;
+    height: 113px;
+    border-radius: 25px;
+    background-color: 161616;
+    border: solid 4px #2A2A2A;
+}
+
+.links p{
+    color: #F5F5F5;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    -webkit-text-stroke: 1px #F5F5F5;
+    letter-spacing: 1px;
+}
+
+footer{
+    height: 10%;
+    
+}
