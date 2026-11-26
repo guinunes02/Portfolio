@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bases.css">
-    <title>Bases para a internet</title>
+    <title>Bases para a Internet | Portfólio</title>
 </head>
-<body>
-    
+
+<body class="pagina-bases">
+    <header>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="burgerToggle" class="burger-toggle" aria-label="Abrir ou fechar menu">
+            <label for="burgerToggle" class="menu-overlay"></label>
+
+            <label for="burgerToggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="navMenu" class="nav-menu" aria-label="Menu principal">
+                <a href="./ppsi.html">P.P.S.I</a>
+                <a href="./bases.html">Bases</a>
+                <a href="./algoritmos.html">Algoritmos</a>
+                <a href="./ingles.html">Inglês</a>
+                <a href="./web.html">Web</a>
+                <a href="./design.html">Design</a>
+                <a href="./mat.html">Mat</a>
+            </nav>
+        </div>
+        <h1>Portfólio</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="./assets/img/bases.svg" alt="">
+            <h2>Bases para a Internet</h2>
+        </section>
+
+        <section class="secao">
+            <h2>Conteudo apresentado</h2>
+            <p>O que vimos sobre a internet</p>
+            <p>Ao longo do semestre, estudamos que a internet é uma rede mundial formada por milhares de redes menores
+                (de empresas, universidades, governos e provedores) que se comunicam usando regras em comum. Aprendemos
+                também a diferença entre internet e web (WWW): a web é apenas um dos serviços que funcionam sobre a
+                internet, assim como e-mail, jogos online e streaming.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Introdução a internet</h2>
+            <p>Na disciplina, vimos que uma rede é um conjunto de dispositivos conectados para compartilhar dados e
+                recursos. Elementos estudados:</p>
+            <b>#</b>
+            <ul>
+                <li>Hosts/dispositivos finais: computadores, celulares, servidores</li>
+                <li>Meios de transmissão: cabos (par trançado, fibra óptica) e sem fio (Wi-Fi, 4G/5G)</li>
+                <li>Dispositivos de rede: switch, roteador e modem</li>
+            </ul>
+            <b>#</b>
+            <p>Classificação por alcance:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;
+            </p>
+            <b>#</b>
+            <ul>
+                <li>PAN: pessoal (ex.: Bluetooth)</li>
+                <li>LAN: local (casa, escritório)</li>
+                <li>MAN: metropolitana</li>
+                <li>WAN: longa distância (a internet é a maior WAN)</li>
+            </ul>
+            <b>#</b>
+            <p>Também estudamos o modelo cliente-servidor, em que o cliente solicita um serviço (o navegador, por
+                exemplo) e o servidor responde (o site).</p>
+            <h3>Endereçamento</h3>
+            <p>Durante as aulas, vimos os principais tipos de identificação em rede:</p>
+            <b>#</b>
+            <ul>
+                <li>Endereço IP: identifica um dispositivo na rede. Estudamos o IPv4 (32 bits) e o IPv6 (128 bits),
+                    criado devido ao esgotamento dos endereços IPv4.</li>
+                <li>Endereço MAC: identificador físico da placa de rede, único de fábrica.</li>
+                <li>DNS: traduz nomes (<code>google.com</code>) em endereços IP.</li>
+                <li>Portas: indicam qual aplicação recebe os dados (80 para HTTP, 443 para HTTPS).</li>
+            </ul>
+        </section>
+
+        <section class="secao">
+            <h2>Modelo OSI</h2>
+            <img class="destaque-img" src="./assets/img/OSI.svg" alt="Diagrama do modelo OSI">
+            <p>Diagrama desenvolvido baseado nas aulas sobre protocolos. Ele exemplica as camadas e tambem o
+                encapsulamento de dados.</p>
+        </section>
+
+        <section class="secao">
+            <h2><a href="https://techversefatec.wordpress.com/">Blog WordPress</a></h2>
+            <img class="destaque-img" src="./assets/img/wordpress.svg" alt="Blog WordPress">
+            <p>Como atividade final, estamos desenvolvendo um blog pelo site WordPress. Ele fala sobre assuntos
+                relacionados a materia. Link para o blog no titula da atividade.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contatos</p>
+
+        <div class="links-footer">
+            <a href="https://www.linkedin.com/in/guilherme-nunes-466906206/">
+                <span class="icone"><img src="./assets/img/linkedin.svg" alt=""></span>
+                <span class="legenda">Linkedin</span>
+            </a>
+
+            <a href="https://github.com/guinunes02">
+                <span class="icone"><img src="./assets/img/github.svg" alt=""></span>
+                <span class="legenda">GitHub</span>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mat.css">
-    <title>Matematica</title>
+    <title>Fundamentos da matemática elementar | Portfólio</title>
 </head>
-<body>
-    
+
+<body class="pagina-ppsi">
+    <header>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="burgerToggle" class="burger-toggle" aria-label="Abrir ou fechar menu">
+            <label for="burgerToggle" class="menu-overlay"></label>
+
+            <label for="burgerToggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="navMenu" class="nav-menu" aria-label="Menu principal">
+                <a href="./ppsi.html">P.P.S.I</a>
+                <a href="./bases.html">Bases</a>
+                <a href="./algoritmos.html">Algoritmos</a>
+                <a href="./ingles.html">Inglês</a>
+                <a href="./web.html">Web</a>
+                <a href="./design.html">Design</a>
+                <a href="./mat.html">Mat</a>
+            </nav>
+        </div>
+        <h1>Portfólio</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="./assets/img/mat.svg" alt="">
+            <h2>Fundamentos da matematica elementar</h2>
+        </section>
+
+        <section class="secao">
+            <h2>Resumo do semestre</h2>
+
+            <h3>Introdução</h3>
+            <p>Neste semestre, estudamos os fundamentos da matemática elementar, com foco em operações com frações, funções, equações do 1º e 2º graus e matrizes.</p>
+
+            <h3>Operações com frações</h3>
+            <p>Aprendemos a trabalhar com frações em todas as operações básicas:</p>
+            <ul>
+                <li>Adição e subtração: é preciso ter o mesmo denominador (usando o MMC quando forem diferentes).</li>
+                <li>Ex.: 1/2 + 1/3 = 3/6 + 2/6 = 5/6</li>
+                <li>Multiplicação: multiplica numerador com numerador e denominador com denominador.</li>
+                <li>Ex.: 2/3 × 4/5 = 8/15</li>
+                <li>Divisão: mantém a primeira fração e multiplica pelo inverso da segunda.</li>
+                <li>Ex.: 1/2 ÷ 3/4 = 1/2 × 4/3 = 4/6 = 2/3</li>
+            </ul>
+            <p>Vimos também a simplificação de frações e a importância de sempre apresentar o resultado na forma mais simples.</p>
+
+            <h3>Funções</h3>
+            <p>Estudamos que uma função é uma relação entre dois conjuntos em que cada valor de x (entrada) corresponde a um único valor de y (saída), representada por f(x).</p>
+            <p>Aprendemos os conceitos de domínio, imagem e a construção de gráficos no plano cartesiano.</p>
+            <ul>
+                <li>Função do 1º grau: f(x) = ax + b, cujo gráfico é uma reta</li>
+                <li>Função do 2º grau: f(x) = ax² + bx + c, cujo gráfico é uma parábola</li>
+            </ul>
+
+            <h3>Equações do 1º grau</h3>
+            <p>Aprendemos que são equações da forma ax + b = 0, resolvidas isolando a incógnita x com operações inversas dos dois lados da igualdade.<br>Ex.: 2x + 4 = 10 → 2x = 6 → x = 3</p>
+
+            <h3>Equações do 2º grau</h3>
+            <p>Estudamos as equações da forma ax² + bx + c = 0, resolvidas pela fórmula de Bhaskara:</p>
+            <ul>
+                <li>Delta: Δ = b² − 4ac</li>
+                <li>Raízes: x = (−b ± √Δ) / 2a</li>
+            </ul>
+            <p>Vimos que o valor de Δ indica quantas soluções reais existem: Δ &gt; 0 (duas raízes), Δ = 0 (uma raiz) e Δ &lt; 0 (nenhuma raiz real).</p>
+
+            <h3>Matrizes</h3>
+            <p>Aprendemos que uma matriz é uma tabela de números organizados em linhas e colunas, com ordem m × n. Estudamos os principais tipos (quadrada, identidade, nula) e as operações de adição, subtração e multiplicação de matrizes, além da multiplicação por um número.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contatos</p>
+
+        <div class="links-footer">
+            <a href="https://www.linkedin.com/in/guilherme-nunes-466906206/">
+                <span class="icone"><img src="./assets/img/linkedin.svg" alt=""></span>
+                <span class="legenda">Linkedin</span>
+            </a>
+
+            <a href="https://github.com/guinunes02">
+                <span class="icone"><img src="./assets/img/github.svg" alt=""></span>
+                <span class="legenda">GitHub</span>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

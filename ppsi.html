@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/ppsi.css">
-    <title>P.P.S.I</title>
+    <title>P.P.S.I | Portfólio</title>
 </head>
-<body>
-    ppsi
+
+<body class="pagina-ppsi">
+    <header>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="burgerToggle" class="burger-toggle" aria-label="Abrir ou fechar menu">
+            <label for="burgerToggle" class="menu-overlay"></label>
+
+            <label for="burgerToggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="navMenu" class="nav-menu" aria-label="Menu principal">
+                <a href="./ppsi.html">P.P.S.I</a>
+                <a href="./bases.html">Bases</a>
+                <a href="./algoritmos.html">Algoritmos</a>
+                <a href="./ingles.html">Inglês</a>
+                <a href="./web.html">Web</a>
+                <a href="./design.html">Design</a>
+                <a href="./mat.html">Mat</a>
+                <a href="./index.html">Home</a>
+            </nav>
+        </div>
+        <h1>Portfólio</h1>
+    </header>
+
+    <main>
+
+        <!-- Título da matéria -->
+        <section class="hero">
+            <img src="./assets/img/PPSI.svg" alt="">
+            <h2>Padrões de Projeto de Sítio para a Internet</h2>
+        </section>
+
+        <!-- Sobre a matéria -->
+        <section class="secao">
+            <h2>Sobre a materia</h2>
+            <p>
+                Nessa disciplina, tivemos a oportunidade de aprender mais sobre os processos de
+                desenvolvimento de sítios para a internet, como os projeto que irei apresentar
+                abaixo. Para acessar os projetos, utilize os nomes que serve como link para.
+            </p>
+        </section>
+
+        <!-- Pizzaria -->
+        <section class="secao">
+            <h2><a href="https://guinunes02.github.io/Pizzaria/">Pizzaria</a></h2>
+            <img class="destaque-img" src="./assets/img/Pizzaria.svg" alt="Projeto Pizzaria">
+            <p>
+                Aqui tivemos que desenvolver esse projeto de site para uma pizzaria, foi um dos
+                primeiros projetos que fizemos, o modelo ja estava pronto no figma e utilizamos
+                o software Visual Studio Code para programa-lo. Site feito somente em HTML e CSS.
+            </p>
+        </section>
+
+        <!-- Coca Cola -->
+        <section class="secao">
+            <h2><a href="https://guinunes02.github.io/Coca-Cola-aula-/">Coca Cola</a></h2>
+            <img class="destaque-img" src="./assets/img/coca.svg" alt="Projeto Coca Cola">
+            <p>
+                Esse outro projeto, aprendemos a trabalhar, tambem, utilizando links entre
+                paginas, Então, além da imagem acima, trabalhamos com mais 2 paginas diferentes,
+                Segue as imagens abaixo. Paginas feitas somente em HTML e CSS, tambem utilizando
+                do VScode.
+            </p>
+            <div class="galeria">
+                <a href="#"><img src="./assets/img/tubaina.svg" alt="Página Fanta"></a>
+                <a href="#"><img src="./assets/img/pepsi.svg" alt="Página Pepsi"></a>
+            </div>
+        </section>
+
+        <!-- Pikachu -->
+        <section class="secao">
+            <h2><a href="https://guinunes02.github.io/Pikachu/">Pikachu</a></h2>
+            <img class="destaque-img" src="./assets/img/pikachu desktop.svg" alt="Projeto Pikachu">
+            <p>
+                Esse projeto é interessante, tivemos a oportunidade de aprender mais sobre
+                responsividade, então para ele, tambem fizemos as versões para tablet e
+                smartphon, segue imagens abaixo. Feito somente com HTML e CSS, tambem pelo
+                VScode.
+            </p>
+            <div class="galeria">
+                <figure>
+                    <a href="#"><img src="./assets/img/pikachu ipad.svg" alt="Versão iPad Mini"></a>
+                    <figcaption>IPad Mini</figcaption>
+                </figure>
+                <figure>
+                    <a href="#"><img src="./assets/img/pikachu iphone.svg" alt="Versão iPhone SE"></a>
+                    <figcaption>Iphone SE</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Pyke -->
+        <section class="secao">
+            <h2><a href="https://guinunes02.github.io/pyke/">Pyke</a></h2>
+            <img class="destaque-img" src="./assets/img/pyke.svg" alt="Projeto Pyke">
+            <p>
+                Gosto muito desse, pois aqui, alem de utilizarmos o VScode, aprendemos um pouco
+                sobre o Figma, então alem dos codigos, tambem elaborei o design no Figma para
+                esse projeto. Codigos feitos somente em HTML e CSS. O projeto tambem conta com
+                versões para Tablet e Smartphone
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contatos</p>
+
+        <div class="links-footer">
+            <a href="https://www.linkedin.com/in/guilherme-nunes-466906206/">
+                <span class="icone"><img src="./assets/img/linkedin.svg" alt=""></span>
+                <span class="legenda">Linkedin</span>
+            </a>
+
+            <a href="https://github.com/guinunes02">
+                <span class="icone"><img src="./assets/img/github.svg" alt=""></span>
+                <span class="legenda">GitHub</span>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
