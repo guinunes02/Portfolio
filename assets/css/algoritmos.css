@@ -13,18 +13,16 @@ Body {
     font-family: 'Inter', sans-serif;
 }
 
-/* a home tem altura fixa (1200px); aqui o conteúdo é maior e deve crescer */
-.pagina-ppsi {
+.pagina-algoritmos {
     height: auto;
     min-height: 100vh;
 }
 
-.pagina-ppsi main {
+.pagina-algoritmos main {
     height: auto;
     align-items: stretch;
 }
 
-/* ---------- título da matéria ---------- */
 .hero {
     display: flex;
     flex-direction: column;
@@ -45,7 +43,6 @@ Body {
     text-align: center;
 }
 
-/* ---------- seções (sobre + projetos) ---------- */
 .secao {
     padding: 20px 25px 30px;
     border-bottom: 4px solid #C6FF3D;
@@ -59,7 +56,6 @@ Body {
     margin-bottom: 20px;
 }
 
-/* nome do projeto funciona como link */
 .secao h2 a {
     color: inherit;
     text-decoration: none;
@@ -67,6 +63,7 @@ Body {
 }
 
 .secao h2 a:hover,
+
 .secao h2 a:focus-visible {
     color: #C6FF3D;
     outline: none;
@@ -80,57 +77,12 @@ Body {
     text-align: left;
 }
 
-/* imagem principal do projeto */
-.destaque-img {
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    margin: 0 auto 25px;
-}
-
-/* ---------- galeria de imagens extras ---------- */
-.galeria {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-    margin-top: 25px;
-}
-
-.galeria img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* Coca Cola: duas imagens lado a lado */
-.galeria>a {
-    flex: 1;
-    max-width: 160px;
-}
-
-/* Pikachu: imagem + legenda */
-.galeria figure {
-    flex: 1;
-    max-width: 130px;
-    margin: 0;
-}
-
-.galeria figcaption {
-    margin-top: 4px;
+h3 {
     color: #A3A3A3;
-    font-size: 18px;
-    text-align: center;
+    font-size: 15px;
 }
 
-/* ---------- rodapé ---------- */
-.pagina-ppsi footer {
-    height: auto;
-    padding: 10px 0 15px;
-}
 
-.pagina-ppsi .links-footer {
-    height: auto;
-    margin-top: 5px;
-}
+
+
+
