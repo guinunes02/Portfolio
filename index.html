@@ -10,17 +10,32 @@
 
 <body>
     <header>
-        <button id="burgerBtn" class="burger-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="burgerToggle" class="burger-toggle" aria-label="Abrir ou fechar menu">
+            <label for="burgerToggle" class="menu-overlay"></label>
+
+            <label for="burgerToggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="navMenu" class="nav-menu" aria-label="Menu principal">
+                <a href="./ppsi.html">P.P.S.I</a>
+                <a href="./bases.html">Bases</a>
+                <a href="./algoritmos.html">Algoritmos</a>
+                <a href="./ingles.html">Inglês</a>
+                <a href="./web.html">Web</a>
+                <a href="./design.html">Design</a>
+                <a href="./mat.html">Mat</a>
+            </nav>
+        </div>
         <h1>Portfólio</h1>
     </header>
     <main>
         <Div class="Apresentação">
 
-            <img src="./assets/img/Foto.png" </img>
+            <img src="./assets/img/Foto.svg" </img>
 
             <div class="span" <h1>Olá, Como esta?</h1>
 
@@ -36,19 +51,61 @@
 
         <div class="links">
 
-            <a class="ppsi" href="./ppsi.html"><img src="./assets/img/PPSI.svg" alt="ppsi"></a>
+            <a class="ppsi" href="./ppsi.html">
+                <span class="icone"><img src="./assets/img/PPSI.svg" alt=""></span>
+                <span class="legenda">P.P.S.I</span>
+            </a>
 
-            <a class="bases" href="./bases.html"><img src="./assets/img/bases.svg" alt="bases"></a>
-            <a class="algoritmos" href="./algoritmos.html"><img src="./assets/img/Algoritmos.svg" alt="Algoritmos"></a>
-            <a class="ingles" href="./ingles.html"><img src="./assets/img/Ingles.svg" alt="ingles"></a>
-            <a class="web" href="./web.html"><img src="./assets/img/web.svg" alt="web"></a>
-            <a class="design" href="./design.html"><img src="./assets/img/design.svg" alt="design"></a>
-            <a class="mat" href="./mat.html"><img src="./assets/img/mat.svg" alt="mat"></a>
+            <a class="bases" href="./bases.html">
+                <span class="icone"><img src="./assets/img/bases.svg" alt=""></span>
+                <span class="legenda">Bases</span>
+            </a>
+
+            <a class="algoritmos" href="./algoritmos.html">
+                <span class="icone"><img src="./assets/img/Algoritmos.svg" alt=""></span>
+                <span class="legenda">Algoritmos</span>
+            </a>
+
+            <a class="ingles" href="./ingles.html">
+                <span class="icone"><img src="./assets/img/Ingles.svg" alt=""></span>
+                <span class="legenda">Inglês</span>
+            </a>
+
+            <a class="web" href="./web.html">
+                <span class="icone"><img src="./assets/img/web.svg" alt=""></span>
+                <span class="legenda">Web</span>
+            </a>
+
+            <a class="design" href="./design.html">
+                <span class="icone"><img src="./assets/img/design.svg" alt=""></span>
+                <span class="legenda">Design</span>
+            </a>
+
+            <a class="mat" href="./mat.html">
+                <span class="icone"><img src="./assets/img/mat.svg" alt=""></span>
+                <span class="legenda">Mat</span>
+            </a>
+
         </div>
 
     </main>
     <footer>
-        dd
+
+        <p>Contatos</p>
+
+        <div class="links-footer">
+
+            <a class="ppsi" href="https://www.linkedin.com/in/guilherme-nunes-466906206/">
+                <span class="icone"><img src="./assets/img/linkedin.svg" alt=""></span>
+                <span class="legenda">Linkedin</span>
+            </a>
+
+            <a class="bases" href="https://github.com/guinunes02">
+                <span class="icone"><img src="./assets/img/github.svg" alt=""></span>
+                <span class="legenda">GitHub</span>
+            </a>
+
+        </div>
     </footer>
 </body>
 
