@@ -194,6 +194,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     height: 80%;
+    width: 100%;
     border-bottom: 4px solid #C6FF3D;
     padding: 50px;
     gap: 49px;
@@ -252,7 +253,7 @@ footer {
     padding: 5px;
 }
 
-footer p{
+footer p {
     color: #F5F5F5;
     font-size: 25px;
 }
@@ -273,7 +274,7 @@ footer p{
     text-decoration: none;
 }
 
-.links-footer img{
+.links-footer img {
     width: 40px;
 }
 
@@ -295,4 +296,147 @@ footer p{
     letter-spacing: 1px;
     text-align: center;
     transition: color 0.2s;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .Apresentação {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 40px;
+    }
+
+    .Apresentação img {
+        width: 190px;
+        height: auto;
+    }
+
+    .Apresentação .span {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: clamp(22px, 1.9vw, 27px);
+        width: 390px;
+    }
+
+    .titulo {
+        font-size: clamp(26px, 2.5vw, 36px);
+        text-align: center;
+        padding: 20px 0 0;
+        width: 400px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 30px 25px 40px;
+    }
+
+    main .links a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6 px;
+        width: 166px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .links .icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 166px;
+        height: 166px;
+        border-radius: 20px;
+
+    }
+
+    .links .icone img {
+        width: 90px;
+        height: 90px;
+        transition: filter .2s;
+    }
+
+    .links .legenda {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .links a:hover .icone {
+        background-color: #D9FF7A;
+    }
+
+    .links a:hover .icone img {
+        filter: brightness(0);
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .links-footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        height: 80%;
+        gap: 150px;
+    }
+
+    .links-footer a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .links-footer img {
+        width: 60px;
+    }
+
+    .links-footer .icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        background-color: #161616;
+        border: solid 4px #2A2A2A;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .links-footer .legenda {
+        color: #A3A3A3;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        transition: color 0.2s;
+    }
 }

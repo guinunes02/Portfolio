@@ -7,7 +7,7 @@
 Body {
     display: flex;
     height: 1200px;
-    width: 100vw;
+    width: 100%;
     background-color: #0A0A0A;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
@@ -91,4 +91,60 @@ h3 {
 .pagina-mat .links-footer {
     height: auto;
     margin-top: 5px;
+}
+
+@media (min-width: 1024px) {
+
+    /* ---------- Base ---------- */
+    body.pagina-mat {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .pagina-mat .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        padding: 30px 50px;
+    }
+
+    .pagina-mat .hero img {
+        width: 170px;
+    }
+
+    .pagina-mat .hero h2 {
+        font-size: clamp(30px, 2.8vw, 40px);
+        text-align: left;
+        max-width: 450px;
+    }
+
+    .pagina-mat .secao {
+        padding: 20px 50px 30px;
+    }
+
+    .pagina-mat .secao h2 {
+        font-size: clamp(26px, 2.5vw, 36px);
+        margin-bottom: 15px;
+    }
+
+    .pagina-mat .secao h3 {
+        font-size: clamp(18px, 1.9vw, 27px);
+        font-weight: 500;
+    }
+
+    .pagina-mat .secao p {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+    }
+
+    .pagina-mat .secao ul {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+        padding-left: 45px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }

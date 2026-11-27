@@ -13,18 +13,16 @@ Body {
     font-family: 'Inter', sans-serif;
 }
 
-/* a home tem altura fixa (1200px); aqui o conteúdo é maior e deve crescer */
 .pagina-ppsi {
     height: auto;
     min-height: 100vh;
 }
 
-.pagina-ppsi main {
+main {
     height: auto;
     align-items: stretch;
 }
 
-/* ---------- título da matéria ---------- */
 .hero {
     display: flex;
     flex-direction: column;
@@ -45,7 +43,6 @@ Body {
     text-align: center;
 }
 
-/* ---------- seções (sobre + projetos) ---------- */
 .secao {
     padding: 20px 25px 30px;
     border-bottom: 4px solid #C6FF3D;
@@ -59,7 +56,6 @@ Body {
     margin-bottom: 20px;
 }
 
-/* nome do projeto funciona como link */
 .secao h2 a {
     color: inherit;
     text-decoration: none;
@@ -80,7 +76,6 @@ Body {
     text-align: left;
 }
 
-/* imagem principal do projeto */
 .destaque-img {
     display: block;
     width: 100%;
@@ -89,7 +84,6 @@ Body {
     margin: 0 auto 25px;
 }
 
-/* ---------- galeria de imagens extras ---------- */
 .galeria {
     display: flex;
     justify-content: center;
@@ -104,13 +98,11 @@ Body {
     height: auto;
 }
 
-/* Coca Cola: duas imagens lado a lado */
 .galeria>a {
     flex: 1;
     max-width: 160px;
 }
 
-/* Pikachu: imagem + legenda */
 .galeria figure {
     flex: 1;
     max-width: 130px;
@@ -124,7 +116,6 @@ Body {
     text-align: center;
 }
 
-/* ---------- rodapé ---------- */
 .pagina-ppsi footer {
     height: auto;
     padding: 10px 0 15px;
@@ -133,4 +124,158 @@ Body {
 .pagina-ppsi .links-footer {
     height: auto;
     margin-top: 5px;
+}
+
+@media (min-width: 1024px) {
+
+    body.pagina-ppsi {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        padding: 30px 50px;
+    }
+
+    .hero img {
+        width: 170px;
+    }
+
+    .hero h2 {
+        font-size: clamp(30px, 2.8vw, 40px);
+        text-align: left;
+        max-width: 450px;
+    }
+
+    /* ---------- Seções ----------
+       O padding lateral mantém o conteúdo centralizado em, no máximo,
+       1440px de largura; as bordas verdes continuam ocupando a tela toda. */
+    .secao {
+        padding: 20px max(50px, calc((100% - 1440px) / 2 + 50px)) 30px;
+    }
+
+    .secao h2 {
+        font-size: clamp(26px, 2.5vw, 36px);
+        margin-bottom: 15px;
+    }
+
+    .secao p {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+    }
+
+    /* ---------- Projetos: 2 colunas (texto + imagem) ---------- */
+    .secao:has(.destaque-img) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "texto-titulo imagem"
+            "texto-corpo  imagem";
+        align-content: center;
+        align-items: center;
+        column-gap: 45px;
+        padding: 25px max(45px, calc((100% - 1440px) / 2 + 45px));
+        text-align: center;
+    }
+
+    .secao:has(.destaque-img) h2 {
+        grid-area: texto-titulo;
+        align-self: end;
+    }
+
+    .secao:has(.destaque-img) p {
+        grid-area: texto-corpo;
+        align-self: start;
+    }
+
+    /* Pizzaria (1º projeto): imagem à esquerda */
+    .secao:nth-of-type(3) {
+        grid-template-areas:
+            "imagem texto-titulo"
+            "imagem texto-corpo";
+    }
+
+    /* Imagem principal: tamanho do Figma (646 x 306).
+       Nunca passa disso (mantém a qualidade) e encolhe
+       proporcionalmente em telas menores. */
+    .secao:has(.destaque-img) .destaque-img {
+        grid-area: imagem;
+        width: 646px;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 646 / 306;
+        justify-self: center;
+        display: block;
+    }
+
+    .galeria {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 45px;
+        align-items: start;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .galeria > * {
+        min-width: 0;
+    }
+
+    .galeria > :first-child {
+        justify-self: end;
+    }
+
+    .galeria > :last-child {
+        justify-self: start;
+    }
+
+    .galeria a {
+        display: block;
+    }
+
+    .galeria-coca {
+        position: relative;
+        display: flex;
+        left: 49.7%;
+        gap: 100px;
+        width: 100%;
+        height: 154px;
+    }
+
+    .galeria-coca img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        max-width: 100%;
+    }
+
+    .galeria figure:first-child img {
+        width: 323px;
+        aspect-ratio: 323 / 432;
+    }
+
+    .galeria figure:last-child img {
+        width: 244px;
+        aspect-ratio: 244 / 432;
+    }
+
+    .galeria figcaption {
+        color: #F5F5F5;
+        font-size: clamp(16px, 1.6vw, 22px);
+        text-align: center;
+    }
 }

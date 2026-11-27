@@ -18,7 +18,7 @@ Body {
     min-height: 100vh;
 }
 
-.pagina-bases main {
+main {
     height: auto;
     align-items: stretch;
 }
@@ -60,7 +60,7 @@ Body {
     color: inherit;
     text-decoration: none;
     transition: color 0.2s;
-}   
+}
 
 .secao h2 a:hover,
 
@@ -123,12 +123,116 @@ Body {
     text-align: center;
 }
 
-.pagina-bases footer {
+footer {
     height: auto;
     padding: 10px 0 15px;
 }
 
-.pagina-bases .links-footer {
+.links-footer {
     height: auto;
     margin-top: 5px;
+}
+
+@media (min-width: 1024px) {
+
+    body.pagina-bases {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .pagina-bases .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        padding: 30px 50px;
+    }
+
+    .pagina-bases .hero img {
+        width: 170px;
+    }
+
+    .pagina-bases .hero h2 {
+        font-size: clamp(30px, 2.8vw, 40px);
+        text-align: left;
+        max-width: 450px;
+    }
+
+    .pagina-bases .secao {
+        padding: 20px max(50px, calc((100% - 1440px) / 2 + 50px)) 30px;
+    }
+
+    .pagina-bases .secao h2 {
+        font-size: clamp(26px, 2.5vw, 36px);
+        margin-bottom: 15px;
+    }
+
+    .pagina-bases .secao h3 {
+        font-size: clamp(18px, 1.9vw, 27px);
+        font-weight: 500;
+    }
+
+    .pagina-bases .secao p {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+    }
+
+    .pagina-bases .secao ul {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+        padding-left: 45px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .pagina-bases .secao:has(.destaque-img) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "texto-titulo imagem"
+            "texto-corpo  imagem";
+        align-content: center;
+        align-items: center;
+        column-gap: 45px;
+        padding: 25px max(45px, calc((100% - 1440px) / 2 + 45px));
+        text-align: center;
+    }
+
+    .pagina-bases .secao:has(.destaque-img) h2 {
+        grid-area: texto-titulo;
+        align-self: end;
+        margin-bottom: 15px;
+    }
+
+    .pagina-bases .secao:has(.destaque-img) p {
+        grid-area: texto-corpo;
+        align-self: start;
+    }
+
+    .pagina-bases .secao:nth-of-type(4) {
+        grid-template-areas:
+            "imagem texto-titulo"
+            "imagem texto-corpo";
+    }
+
+    .pagina-bases .secao:has(.destaque-img) .destaque-img {
+        grid-area: imagem;
+        max-width: 100%;
+        height: auto;
+        justify-self: center;
+        display: block;
+    }
+
+    .pagina-bases .secao:nth-of-type(4) .destaque-img {
+        width: 646px;
+        aspect-ratio: 646 / 347;
+    }
+
+    .pagina-bases .secao:nth-of-type(5) .destaque-img {
+        width: 646px;
+        aspect-ratio: 646 / 308;
+    }
 }

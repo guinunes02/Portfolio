@@ -88,3 +88,59 @@ h3 {
     height: auto;
     margin-top: 5px;
 }
+
+@media (min-width: 1024px) {
+
+    body.pagina-design {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .pagina-design .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        padding: 30px 50px;
+    }
+
+    .pagina-design .hero img {
+        width: 170px;
+    }
+
+    .pagina-design .hero h2 {
+        font-size: clamp(30px, 2.8vw, 40px);
+        text-align: left;
+        max-width: 450px;
+    }
+
+    .pagina-design .secao {
+        padding: 20px 50px 30px;
+    }
+
+    .pagina-design .secao h2 {
+        font-size: clamp(26px, 2.5vw, 36px);
+        margin-bottom: 15px;
+    }
+
+    .pagina-design .secao h3 {
+        font-size: clamp(18px, 1.9vw, 27px);
+        font-weight: 500;
+    }
+
+    .pagina-design .secao p {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+    }
+
+    .pagina-design .secao ul {
+        width: 100%;
+        font-size: clamp(18px, 1.9vw, 27px);
+        line-height: 1.35;
+        padding-left: 45px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
